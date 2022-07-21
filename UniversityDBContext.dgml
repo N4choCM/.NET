@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+<Node Id="IModel" Label="UniversityDBContext" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" PropertyAccessMode="PropertyAccessMode.Default" ProductVersion="6.0.7" Annotations="BaseTypeDiscoveryConvention:DerivedTypes: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType]]
+Relational:MaxIdentifierLength: 128
+RelationshipDiscoveryConvention:InverseNavigationCandidates: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.SortedSet`1[System.Type]]
+SqlServer:ValueGenerationStrategy: IdentityColumn" Category="Model" Group="Expanded" />
+<Node Id = "BaseEntityUser" Label="BaseEntityUser" Name="BaseEntityUser" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "CategoryCurso" Label="CategoryCurso" Name="CategoryCurso" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "BaseEntityUser.BaseEntitiesId" Label="BaseEntitiesId" Name="BaseEntitiesId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntityUser.UsersId" Label="UsersId" Name="UsersId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CursoStudent" Label="CursoStudent" Name="CursoStudent" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "CategoryCurso.CategoriesId" Label="CategoriesId" Name="CategoriesId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CategoryCurso.CoursesId" Label="CoursesId" Name="CoursesId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity" Label="BaseEntity" Name="BaseEntity" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="DiscriminatorProperty: Discriminator
+DiscriminatorValue: BaseEntity
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "CursoStudent.CoursesId" Label="CoursesId" Name="CoursesId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CursoStudent.StudentsId" Label="StudentsId" Name="StudentsId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Category" Label="Category" Name="Category" BaseClass="BaseEntity" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="DiscriminatorProperty:
+DiscriminatorValue: Category
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "BaseEntity.Id" Label="Id" Name="Id" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "BaseEntity.CreatedAt" Label="CreatedAt" Name="CreatedAt" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.CreatedBy" Label="CreatedBy" Name="CreatedBy" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.DeletedAt" Label="DeletedAt" Name="DeletedAt" Category="Property Optional" Type="DateTime?" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.DeletedBy" Label="DeletedBy" Name="DeletedBy" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.Discriminator" Label="Discriminator" Name="Discriminator" Category="Property Required" Type="string" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="AfterSaveBehavior: Throw
+ValueGeneratorFactoryType: Microsoft.EntityFrameworkCore.ValueGeneration.DiscriminatorValueGeneratorFactory" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="True" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.IsDeleted" Label="IsDeleted" Name="IsDeleted" Category="Property Required" Type="bool" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.UpdatedAt" Label="UpdatedAt" Name="UpdatedAt" Category="Property Optional" Type="DateTime?" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.UpdatedBy" Label="UpdatedBy" Name="UpdatedBy" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "BaseEntity.Users" Label="Users" Name="Users" Category="Property Optional" Type="ICollection&lt;User&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Chapter" Label="Chapter" Name="Chapter" BaseClass="BaseEntity" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="DiscriminatorProperty:
+DiscriminatorValue: Chapter
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Category.Name" Label="Name" Name="Name" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Category.Courses" Label="Courses" Name="Courses" Category="Property Optional" Type="ICollection&lt;Curso&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Curso" Label="Curso" Name="Curso" BaseClass="BaseEntity" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="DiscriminatorProperty:
+DiscriminatorValue: Curso
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Chapter.CourseId" Label="CourseId" Name="CourseId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Chapter.Course" Label="Course (1)" Name="Course" Category="Navigation Property" Type="Curso"  Field="" Dependent="" Principal="Curso" Inverse="Chapter" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Chapter.Chapter" Label="Chapter (1)" Name="Chapter" Category="Navigation Property" Type="{&apos;CourseId&apos;}"  Field="" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Chapter.CourseId" Label="CourseId (1)" Name="CourseId" Category="Navigation Property" Type=""  Field="" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Chapter.Relational:Filter:" Label="Relational:Filter: (1)" Name="Relational:Filter:" Category="Navigation Property" Type="[CourseId]"  Field="" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Chapter.List" Label="List" Name="List" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Student" Label="Student" Name="Student" BaseClass="BaseEntity" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="DiscriminatorProperty:
+DiscriminatorValue: Student
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Curso.Level" Label="Level" Name="Level" Category="Property Required" Type="Level" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Curso.Chapter" Label="Chapter (1)" Name="Chapter" Category="Navigation Property" Type="Chapter"  Field="" Dependent="Chapter" Principal="" Inverse="Course" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Curso.Categories" Label="Categories (1)" Name="Categories" Category="Navigation Property" Type="ICollection&lt;Category&gt;"  Field="" Dependent="" Principal="" Inverse="Courses" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Curso.Students" Label="Students (1)" Name="Students" Category="Navigation Property" Type="ICollection&lt;Student&gt;"  Field="" Dependent="" Principal="" Inverse="Courses" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Curso.LongDescription" Label="LongDescription" Name="LongDescription" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Curso.Name" Label="Name" Name="Name" Category="Property Required" Type="string" MaxLength="(50)" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 50
+Relational:ColumnName: Curso_Name" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Curso.ShortDescription" Label="ShortDescription" Name="ShortDescription" Category="Property Required" Type="string" MaxLength="(280)" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 280" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "User" Label="User" Name="User" BaseClass="BaseEntity" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="DiscriminatorProperty:
+DiscriminatorValue: User
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Student.Dob" Label="Dob" Name="Dob" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Student.FirstName" Label="FirstName" Name="FirstName" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Student.LastName" Label="LastName" Name="LastName" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Student.Courses" Label="Courses" Name="Courses" Category="Property Optional" Type="ICollection&lt;Curso&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "User" Label="User" Name="User" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="" Category="EntityType" Group="Expanded" />
+<Node Id = "User.Email" Label="Email" Name="Email" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "User.LastName" Label="LastName" Name="LastName" Category="Property Required" Type="string" MaxLength="(100)" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 100
+Relational:ColumnName: User_LastName" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "User.Name" Label="Name" Name="Name" Category="Property Required" Type="string" MaxLength="(50)" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 50
+Relational:ColumnName: User_Name" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "User.Password" Label="Password" Name="Password" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "User.BaseEntities" Label="BaseEntities" Name="BaseEntities" Category="Property Optional" Type="ICollection&lt;BaseEntity&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+<Link Source = "IModel" Target="BaseEntityUser" Category="Contains" />
+<Link Source = "IModel" Target="CategoryCurso" Category="Contains" />
+<Link Source = "BaseEntityUser" Target="BaseEntityUser.BaseEntitiesId" Category="Contains" />
+<Link Source="BaseEntityUser" Target="BaseEntity" From="BaseEntityUser.BaseEntitiesId" To="BaseEntity.Id" Name="BaseEntityUser -> BaseEntity" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="BaseEntityUser" Target="User" From="BaseEntityUser.UsersId" To="User.Id" Name="BaseEntityUser -> User" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "BaseEntityUser" Target="BaseEntityUser.UsersId" Category="Contains" />
+<Link Source = "IModel" Target="CursoStudent" Category="Contains" />
+<Link Source = "CategoryCurso" Target="CategoryCurso.CategoriesId" Category="Contains" />
+<Link Source="CategoryCurso" Target="Category" From="CategoryCurso.CategoriesId" To="Category.Id" Name="CategoryCurso -> Category" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="CategoryCurso" Target="Curso" From="CategoryCurso.CoursesId" To="Curso.Id" Name="CategoryCurso -> Curso" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "CategoryCurso" Target="CategoryCurso.CoursesId" Category="Contains" />
+<Link Source = "IModel" Target="BaseEntity" Category="Contains" />
+<Link Source = "CursoStudent" Target="CursoStudent.CoursesId" Category="Contains" />
+<Link Source="CursoStudent" Target="Curso" From="CursoStudent.CoursesId" To="Curso.Id" Name="CursoStudent -> Curso" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="CursoStudent" Target="Student" From="CursoStudent.StudentsId" To="Student.Id" Name="CursoStudent -> Student" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "CursoStudent" Target="CursoStudent.StudentsId" Category="Contains" />
+<Link Source = "IModel" Target="Category" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.Id" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.CreatedAt" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.CreatedBy" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.DeletedAt" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.DeletedBy" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.Discriminator" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.IsDeleted" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.UpdatedAt" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.UpdatedBy" Category="Contains" />
+<Link Source = "BaseEntity" Target="BaseEntity.Users" Category="Contains" />
+<Link Source = "IModel" Target="Chapter" Category="Contains" />
+<Link Source = "Category" Target="Category.Name" Category="Contains" />
+<Link Source = "Category" Target="Category.Courses" Category="Contains" />
+<Link Source = "IModel" Target="Curso" Category="Contains" />
+<Link Source = "Chapter" Target="Chapter.Course" Category="Contains" />
+<Link Source = "Chapter" Target="Chapter.Chapter" Category="Contains" />
+<Link Source = "Chapter" Target="Chapter.CourseId" Category="Contains" />
+<Link Source = "Chapter" Target="Chapter.Relational:Filter:" Category="Contains" />
+<Link Source="Chapter" Target="Curso" From="Chapter.CourseId" To="Curso.Id" Name="Chapter -> Curso" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source = "Chapter" Target="Chapter.List" Category="Contains" />
+<Link Source = "IModel" Target="Student" Category="Contains" />
+<Link Source = "Curso" Target="Curso.Chapter" Category="Contains" />
+<Link Source = "Curso" Target="Curso.Categories" Category="Contains" />
+<Link Source = "Curso" Target="Curso.Students" Category="Contains" />
+<Link Source = "Curso" Target="Curso.Level" Category="Contains" />
+<Link Source = "Curso" Target="Curso.LongDescription" Category="Contains" />
+<Link Source = "Curso" Target="Curso.Name" Category="Contains" />
+<Link Source = "Curso" Target="Curso.ShortDescription" Category="Contains" />
+<Link Source = "IModel" Target="User" Category="Contains" />
+<Link Source = "Student" Target="Student.Dob" Category="Contains" />
+<Link Source = "Student" Target="Student.FirstName" Category="Contains" />
+<Link Source = "Student" Target="Student.LastName" Category="Contains" />
+<Link Source = "Student" Target="Student.Courses" Category="Contains" />
+<Link Source = "IModel" Target="User" Category="Contains" />
+<Link Source = "User" Target="User.Email" Category="Contains" />
+<Link Source = "User" Target="User.LastName" Category="Contains" />
+<Link Source = "User" Target="User.Name" Category="Contains" />
+<Link Source = "User" Target="User.Password" Category="Contains" />
+<Link Source = "User" Target="User.BaseEntities" Category="Contains" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+  <Properties>
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="Field"  Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type"  Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />    
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass"  Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
